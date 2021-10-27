@@ -1,0 +1,38 @@
+body{
+    background: url(/Maquettes-CV/redimensionner.png);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family:'Nunito Sans', sans-serif;
+
+    flex-basis: 4em;
+    flex-grow: 4;
+    
+    
+    
+
+}
+nav{
+    display: flex;
+    flex-flow: row;
+    font-family:'Nunito Sans', sans-serif;
+    
+    
+
+}
+a{
+    /* justify-content: center; */
+    /* align-items: baseline;
+    box-sizing: border-box; */
+    
+    text-align: center;
+    align-self: center;
+    
+    text-decoration: none;
+    color: black;
+    
+    flex: 1 0 auto;
+    
+
+}
