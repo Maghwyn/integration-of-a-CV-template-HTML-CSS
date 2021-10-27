@@ -8,26 +8,19 @@
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
-h1{
-    display: flex;
-    justify-content: flex-start;
-    font-family:'Nunito Sans', sans-serif;
 
-    flex-basis: 4em;
-    flex-grow: 4;
-    padding-left: 2%;
-    
-    
-    
-
-}
 nav{
     display: flex;
     flex-flow: row;
     font-family:'Nunito Sans', sans-serif;
-    
-    
-
+}
+h1{
+    display: flex;
+    justify-content: flex-start;
+    font-family:'Nunito Sans', sans-serif;
+    flex-basis: 4em;
+    flex-grow: 4;
+    padding-left: 2%;
 }
 a{
     text-align: center;
@@ -126,6 +119,7 @@ table{
     display: flex;
     justify-content: space-around;
     flex-flow: row;
+    padding-bottom: 10%;
     
     
 

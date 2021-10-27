@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@200;400;700;800;900&display=swap');
+
+#footer{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.gris{
+    background-color: #F5F6F8;
+}
+
+ul>li{
+    list-style-type: none;
+}
+
+.nom{
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.detail{
+    font-size: 13px;
+    margin: 10px;
+}
+
+#images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-left:0%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#ul>li{
+    text-align:center;
+}
