@@ -1,0 +1,227 @@
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+/*------------------ Container common ----------------- */
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background: url(/Template-CV/images/wave-bg.svg);
+    background-size:100% 900px;
+    background-repeat: no-repeat;
+    /* background-attachment:fixed, scroll; */
+}
+
+/* ------------------ navigation for all pages --------------- */
+nav{
+    display: flex;
+    flex-flow: row;
+    font-family:'Nunito Sans', sans-serif;
+    padding-bottom: 5%;
+}
+.logoNav{
+    display: flex;
+    justify-content: flex-start;
+    font-family:'Nunito Sans', sans-serif;
+    flex-basis: 4em;
+    flex-grow: 4;
+    padding-left: 2%;
+}
+.linkNav{
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    flex: 1 0 auto;
+}
+/* -------------  End of navigation for all pages ------------- */
+
+
+
+/* ----------------- Header for all pages ----------------------- */
+
+
+.header_container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 5%;
+    padding: 3%;
+}
+
+/* .header_container > * {
+    width: 50%;
+} */
+
+.production {
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+}
+
+/* .image_container {
+    display: flex;
+    text-align: left;
+} */
+
+.introduction {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.introduction > h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+.underligning {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.introduction > h3 {
+    font-weight: normal;
+}
+
+.presentation {
+    padding : 0 10px;
+}
+
+.logo_container { 
+    display: inline-flex;
+    flex-wrap: row wrap;
+}
+
+.logo_li {
+    align-self: flex-start;
+    list-style: none; 
+    margin-right: 10px;
+}
+
+.logo_li a[href*="twitter.com"]::before {
+    content: '';
+    background: url(/Template-CV/images/twitter.png) center no-repeat;
+    background-size: 15px auto;
+    padding-left: 25px;
+}
+.logo_li a[href*="facebook.com"]::before { 
+    content: '';
+    background: url(/Template-CV/images/facebook.png) center no-repeat;
+    background-size: 15px auto;
+    padding-left: 25px;
+}
+.logo_li a[href*="instagram.com"]::before { 
+    content: '';
+    background: url(/Template-CV/images/instagram.png) center no-repeat;
+    background-size: 15px auto;
+    padding-left: 25px;
+}
+.logo_li a[href*="linkedin.com"]::before { 
+    content: '';
+    background: url(/Template-CV/images/linkedin-logo.png) center no-repeat;
+    background-size: 15px auto;
+    padding-left: 25px;
+}
+.logo_li a[href*="behance.net"]::before { 
+    content: '';
+    background: url(/Template-CV/images/behance.png) center no-repeat;
+    background-size: 15px auto;
+    padding-left: 25px; 
+}
+
+.logo_li a::after {
+    display: inline-flex;
+    width: 10px;
+}
+
+.logo { /*Span*/
+    display: none;
+}
+
+
+/* -------- Bouton Get In Touch ----------- */
+.contact {
+    background-color: rgb(247, 224, 94);
+    box-shadow: 1px 2px 2px rgba(0,0,0,25%);
+    max-width: 170px;
+    max-height: 30px;
+    padding: 22px;
+    border-width: 2px 4px;
+    border-radius: 40px;
+
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact span {
+    font-size: 14px;
+    align-self: center;
+}
+
+/* ------------------ end of The header ------------- */
+
+
+/* ------------------- footer -----------------------*/
+
+
+#footer{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.gris{
+    background-color: #F5F6F8;
+}
+
+ul>li{
+    list-style-type: none;
+}
+
+.nom{
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.detail{
+    font-size: 13px;
+    margin: 10px;
+}
+
+#images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-left:0%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#ul>li{
+    text-align:center;
+}
+
+
+/* --------------- end of the footer -----------*/
