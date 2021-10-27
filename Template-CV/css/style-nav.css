@@ -1,12 +1,21 @@
-/* body{
-} */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
 h1{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-family:'Nunito Sans', sans-serif;
 
     flex-basis: 4em;
     flex-grow: 4;
+    padding-left: 2%;
     
     
     
@@ -31,6 +40,9 @@ a{
     
 
 }
+
+
+/* Premier bloc du main */
 .mainContainer{
     display: flex;
     flex-flow: row;
@@ -59,7 +71,7 @@ a{
     flex-basis: auto;
     order:-2;
     margin: 0%;
-    font-family: 'Nunito Sans', sans-serif;
+    
     
 }
 .mainContainer p{
@@ -67,7 +79,7 @@ a{
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 3em;
-    font-family: 'Nunito Sans', sans-serif;
+
 }
 table{
     font-family: 'Nunito Sans', sans-serif;;
@@ -84,4 +96,41 @@ table{
 }
 .cliento img{
     border-radius: 5%;
+}
+/* fin du premier bloc du main */
+
+/* Deuxième bloc du main */
+
+.secondDivContainer{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+.secondTitleDiv{
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+.secondDivContainer p{
+    display: flex;
+    flex-flow: wrap;
+    flex-basis: 100%;
+    flex-grow: 0;
+    padding: 2%;
+    text-align: center;
+}
+/* fin deuxième bloc du main */
+
+/* Début troisième bloc du main*/
+.divLogo{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    
+    
+
+}
+.divLogo div span{
+    display: flex;
+    justify-content: center;
 }
