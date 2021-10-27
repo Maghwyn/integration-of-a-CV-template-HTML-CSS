@@ -1,6 +1,5 @@
-body{
-    background: url(/Maquettes-CV/redimensionner.png);
-}
+/* body{
+} */
 h1{
     display: flex;
     justify-content: center;
@@ -34,5 +33,45 @@ a{
     
     flex: 1 0 auto;
     
+
+}
+.mainContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    gap: 5%;
+}
+.divContainer{
+    display: flex;
+    flex-direction:column ;
+    flex-basis: 40%;
+    order:-2;
+    justify-content: space-between;
+}
+.mainContainer h2{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    order:-2;
+    margin: 0%;
+    
+}
+.mainContainer p{
+    display: flex;
+    flex-grow: 0;
+    flex-basis: 3em;
+}
+
+
+
+
+.cliento{
+    /* flex-basis: auto; */
+    width: auto;
+    height: auto;
+    order: -1;
+    border-radius: 5%;
 
 }
