@@ -21,10 +21,6 @@ nav{
 
 }
 a{
-    /* justify-content: center; */
-    /* align-items: baseline;
-    box-sizing: border-box; */
-    
     text-align: center;
     align-self: center;
     
@@ -37,18 +33,25 @@ a{
 }
 .mainContainer{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-flow: row;
+    align-items: center;
     box-sizing: border-box;
-    gap: 5%;
+   
+    flex-basis: auto;
+    gap: 10%;
 }
 .divContainer{
     display: flex;
     flex-direction:column ;
-    flex-basis: 40%;
+    flex-basis: auto;
+    flex-grow: 0;
     order:-2;
-    justify-content: space-between;
+
+    gap: 15px;
+    padding:3%;
+    
 }
+
 .mainContainer h2{
     display: flex;
     flex-grow: 0;
@@ -56,22 +59,29 @@ a{
     flex-basis: auto;
     order:-2;
     margin: 0%;
+    font-family: 'Nunito Sans', sans-serif;
     
 }
 .mainContainer p{
     display: flex;
     flex-grow: 0;
+    flex-shrink: 0;
     flex-basis: 3em;
+    font-family: 'Nunito Sans', sans-serif;
+}
+table{
+    font-family: 'Nunito Sans', sans-serif;;
 }
 
 
 
 
 .cliento{
-    /* flex-basis: auto; */
-    width: auto;
-    height: auto;
     order: -1;
-    border-radius: 5%;
+    padding:3%;
+    
 
+}
+.cliento img{
+    border-radius: 5%;
 }
