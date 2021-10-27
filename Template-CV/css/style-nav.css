@@ -3,18 +3,22 @@
     max-width: 1200px;
     margin: auto;
 }
-
-
 body{
     font-family: 'Nunito Sans', sans-serif;
+    background: url(/Template-CV/images/wave-bg.svg);
+    background-size:100% 50%;
+    background-repeat: no-repeat;
+    
+
 }
 
 nav{
     display: flex;
     flex-flow: row;
     font-family:'Nunito Sans', sans-serif;
+    padding-bottom: 5%;
 }
-h1{
+.logoNav{
     display: flex;
     justify-content: flex-start;
     font-family:'Nunito Sans', sans-serif;
@@ -22,16 +26,12 @@ h1{
     flex-grow: 4;
     padding-left: 2%;
 }
-a{
+.linkNav{
     text-align: center;
     align-self: center;
-    
     text-decoration: none;
     color: black;
-    
     flex: 1 0 auto;
-    
-
 }
 
 
