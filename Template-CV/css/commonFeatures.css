@@ -51,7 +51,7 @@ nav{
 
 .header_container {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 5%;
     padding: 3%;
