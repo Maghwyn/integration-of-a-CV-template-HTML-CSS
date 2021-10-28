@@ -1,0 +1,93 @@
+/* Premier bloc du main */
+.mainContainer{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    box-sizing: border-box;
+   
+    flex-basis: auto;
+    gap: 10%;
+}
+.divContainer{
+    display: flex;
+    flex-direction:column ;
+    flex-basis: auto;
+    flex-grow: 0;
+    order:-2;
+
+    gap: 15px;
+    padding:3%;
+    
+}
+
+.mainContainer h2{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    order:-2;
+    margin: 0%;
+    
+    
+}
+.mainContainer p{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 3em;
+
+}
+.firstColumn{
+    color: gray;
+}
+
+
+
+
+.profilePicture{
+    order: -1;
+    padding:3%;
+    
+
+}
+.profilePicture img{
+    border-radius: 5%;
+}
+/* fin du premier bloc du main */
+
+/* Deuxième bloc du main */
+
+.secondHomeDivContainer{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+.secondTitleDiv{
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+.secondHomeDivContainer p{
+    display: flex;
+    flex-flow: wrap;
+    flex-basis: 100%;
+    flex-grow: 0;
+    padding: 2%;
+    text-align: center;
+}
+/* fin deuxième bloc du main */
+
+/* Début troisième bloc du main*/
+.logoHome{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    padding-bottom: 10%;
+    
+    
+
+}
+.logoHome div span{
+    display: flex;
+    justify-content: center;
+}
