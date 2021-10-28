@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@200;400;700;800;900&display=swap');
+
+body{
+    font-family: 'Nunito Sans', 'Bebas Neue', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#mainContact{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#formulaireContact{
+    max-width: 350px;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+#texteContact{
+    max-width: 350px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.texteC{
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.tailleC{
+    max-width: 330px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: solid rgb(199, 198, 198);
+    border-width: 1px;
+}
+
+#titre{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gris{
+    background-color: #F5F6F8;
+}
+.jaune{
+    background-color: #F7e05e;
+}
+
+.bouton {
+    border: none;
+    padding: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 10px;
+    border-radius: 20px;
+    border-color:rgb(168, 168, 168);
+  }
