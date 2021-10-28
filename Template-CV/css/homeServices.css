@@ -37,27 +37,27 @@
     flex-basis: 3em;
 
 }
-table{
-    font-family: 'Nunito Sans', sans-serif;;
+.firstColumn{
+    color: gray;
 }
 
 
 
 
-.cliento{
+.profilePicture{
     order: -1;
     padding:3%;
     
 
 }
-.cliento img{
+.profilePicture img{
     border-radius: 5%;
 }
 /* fin du premier bloc du main */
 
 /* Deuxième bloc du main */
 
-.secondDivContainer{
+.secondHomeDivContainer{
     display:flex;
     flex-flow: column;
     align-items: center;
@@ -67,7 +67,7 @@ table{
     margin-top: 5%;
     margin-bottom: 0%;
 }
-.secondDivContainer p{
+.secondHomeDivContainer p{
     display: flex;
     flex-flow: wrap;
     flex-basis: 100%;
@@ -78,7 +78,7 @@ table{
 /* fin deuxième bloc du main */
 
 /* Début troisième bloc du main*/
-.divLogo{
+.logoHome{
     display: flex;
     justify-content: space-around;
     flex-flow: row;
@@ -87,7 +87,7 @@ table{
     
 
 }
-.divLogo div span{
+.logoHome div span{
     display: flex;
     justify-content: center;
 }
