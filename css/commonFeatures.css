@@ -65,16 +65,6 @@
     width: 100%;
 }
 
-.introduction_container {
-    display: flex; 
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    padding-top: 35px;
-    padding-bottom: 80px;
-    padding-left: 25px;
-    width: 50%;
-}
-
 .image_container {
     width: 50%
 }
@@ -83,10 +73,21 @@
     width: 90%;
 }
 
+.introduction_container {
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    padding-bottom: 80px;
+    padding-left: 25px;
+    /* width: 50%; */
+}
+
 .introduction {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
+    width: 100%;
 }
 
 .introduction > h2 {
@@ -111,6 +112,7 @@
 .logo_docker { 
     display: inline-flex;
     flex-wrap: row wrap;
+    width: 100%;
 }
 
 .logo_container {
@@ -173,11 +175,36 @@
     justify-content: center;
     text-decoration: none;
     font-weight: bold;
+    width: 100%;
 }
 
 .contact span {
     font-size: 14px;
     align-self: center;
+}
+
+@media only screen and (min-width: 400px) {
+    .image_container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .image_container {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .image_container {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .image_container {
+        width: 50%;
+    }
 }
 
 /* -------- Bouton Get In Touch ----------- */
