@@ -41,8 +41,7 @@
     display: flex;
     justify-content: flex-start;
     font-family:'Nunito Sans', sans-serif;
-    flex-basis: 4em;
-    flex-grow: 4;
+    width: 100%;
     padding-left: 2%;
 }
 .linkNav{
@@ -50,14 +49,74 @@
     align-self: center;
     text-decoration: none;
     color: black;
-    flex: 1 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 320px) {
+    h1{
+        font-size: 20%;
+    }
+    .logoNav{
+        width: 30%;
+    }
+    .linkNav{
+        font-size: 50%;
+    }
+    .nav a{
+        width: auto;
+    }
+
 }
 /* -------------  End of navigation for all pages ------------- */
 
+@media (max-width: 320px) {
+    .header_container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 320px;
+        width: 100%;
+        padding: 5%;
 
 
+    }
+    .image_container{
+        min-width: 300px;
+        max-width: 320px;
+    }
+    .introduction_container{
+        min-width: 300px;
+        max-width: 320px;
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        min-width: 300px;
+        max-width: 320px;
+    }
+    .introduction {
+        width: 100%;
+        font-size: 80%;
+    }
+    .introduction >h2{
+        font-size: 20%;
+    }
+    
+
+}
+@media screen and (min-width: 321px) {
+    .underligning {
+        align-self: flex-end;
+    }
+    .introduction {
+        max-width: 100%;
+
+    }
+}
 /* ----------------- Header for all pages ----------------------- */
-
+.alignHeaderTitle{
+    display: flex;
+    flex-flow: column;
+}
 .header_container {
     display: flex;
     flex-flow: row wrap;
@@ -90,13 +149,13 @@
 }
 
 .introduction > h2 {
-    font-size: 40px;
+    font-size: 300%;
     font-weight: bold;
     margin-bottom: -5px;
 }
 
 .underligning {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     margin-bottom: 20px;
 }
 
