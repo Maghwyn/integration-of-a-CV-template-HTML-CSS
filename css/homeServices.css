@@ -1,0 +1,148 @@
+/* Premier bloc du main */
+
+@media screen and (max-width:320px) {
+    .cliento img{
+        max-width: 310px;
+        min-width: 310px;
+        width: 100%;
+    }
+    .divContainer{
+        max-width: 310px;
+        min-width: 310px;
+        width: 100%;
+    }
+    .mainContainer{
+        width: 100%;
+        height: 50%;
+    }
+    /* .secondDivContainer{
+        width: 50%;
+    } */
+    .divLogo div img{
+        width: 50%;
+        max-height: 50%;
+        max-width: 50%;
+        
+    }
+    .containerLogos{
+        width: 50%;
+    }
+    .containerLogos div img {
+        width: 30%;
+    }
+    .containerLogos div {
+        font-size: 50%;  
+        align-self: center; 
+    }
+    /* .containerLogos div p{
+        align-self: center;
+    } */
+    .divLogo div p{
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+
+
+    }
+    
+}
+.mainContainer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    gap: 10%;
+}
+.divContainer{
+    display: flex;
+    flex-direction:column ;
+    width: 45%;
+
+    gap: 15px;
+    padding:3%;
+    
+}
+
+.mainContainer h2{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    order:0;
+    margin: 0%;
+    
+    
+}
+.mainContainer p{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 3em;
+
+}
+table{
+    font-family: 'Nunito Sans', sans-serif;;
+}
+
+
+
+
+.cliento{
+    order:0 ;
+    padding:3%;
+    width: 45%;
+    
+
+}
+.cliento img{
+    border-radius: 5%;
+    width: 90%;
+}
+/* fin du premier bloc du main */
+
+/* Deuxième bloc du main */
+
+.secondDivContainer{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.secondTitleDiv{
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+.secondDivContainer p{
+    display: flex;
+    flex-flow: wrap;
+    flex-basis: 100%;
+    flex-grow: 0;
+    padding: 2%;
+    text-align: center;
+}
+/* fin deuxième bloc du main */
+
+/* Début troisième bloc du main*/
+.divLogo{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    padding-bottom: 10%;
+    width: 100%;
+}
+.divLogo div img{
+    display: flex;
+    width:100% ;
+    max-height:50% ;
+}
+.divLogo div p{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.containerLogos{
+    width: 100%;
+}
