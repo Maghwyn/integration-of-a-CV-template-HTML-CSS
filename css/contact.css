@@ -21,8 +21,13 @@
 .texteContact{
     max-width: 400px;
     width: 100%;
-    padding: 10px;
+    padding-top: 4%;
+    padding-left: 3%;
+}
 
+.texteContact {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .texteFormulaire{
@@ -47,6 +52,10 @@
     text-align: center;
 }
 
+.titre > img {
+    margin-bottom: 5%;
+}
+
 .gris{
     background-color: #F5F6F8;
 }
@@ -68,11 +77,50 @@
     margin: 10px 10px;
     border-radius: 20px;
     border-color:rgb(168, 168, 168);
+    background-color: #F7e05e;
+    transition-property: background-color;
+    transition-duration: 0s;
 }
 
-.texteContact > *{
-    margin: 30px;
+.bouton:hover {
+    background-color: #ffed84;
 }
-/* h3{
+
+.avion{
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+/* .texteContact > *{
     margin: 30px;
 } */
+
+@media only screen and (max-width: 800px) {
+    .formulaireContact-width{
+        width: 95%;
+        border-radius: 10px;
+        /* display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center; */
+    }
+
+    .texteContact {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .crash {
+        align-self: center;
+    }
+
+    /* .formulaireContact-width > * {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    } */
+}

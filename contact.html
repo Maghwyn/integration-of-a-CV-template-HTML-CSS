@@ -17,11 +17,18 @@
 
 		<nav id="nav" class="navigation gris">
 			<div class="container nav"> 
-					<h1 class="logoNav">Super Folio</h1>
-					<a class="linkNav" href="homeServices.html">Services</a>
-					<a class="linkNav" href="experiences.html">Expérience</a>
-					<a class="linkNav" href="testimonials.html">Testimonials</a>
-					<a class="linkNav" href="contact.html">Contact</a>
+				<h1 class="logoNav">Super Folio</h1>
+                <ul class="linknav-pos"> 
+					<li class="crash2"> 
+						<label class="burger">☰</label>  
+						<ul class ="linknav-sub">
+							<li><a class="linkNav" href="homeServices.html">Services</a></li>
+							<li><a class="linkNav" href="experiences.html">Expérience</a></li>
+							<li><a class="linkNav" href="testimonials.html">Testimonials</a></li>
+							<li><a class="linkNav" href="contact.html">Contact</a></li>
+						</ul>
+					</li>
+				<ul>
 			</div>
 		</nav>
 
@@ -36,10 +43,15 @@
 						<img class="image" src="images/hello3.svg">
 					</div>
 					<div class="introduction_container">
-						<div class="introduction"> HELLO !
-							<h2><strong>I'm Walter Petterson</strong></h2>
-							<img class="underligning" src="images/jaune.svg">
+						<div class="introduction"> 
+							<p>HELLO !</p>
+							<br>
+							<div class="hello">
+								<h2><strong>I'm Walter Petterson</strong></h2>
+								<div class="image_content"><img class="underligning" src="images/jaune.svg"></div>
+							</div>
 							<h3>Web Developer & Mobile Application Developer</h3>
+							<br><br>
 						</div>
 						<ul class="logo_docker">
 							<li class="logo_container"><a href="http://twitter.com"><span class="logo_items">Twitter</span></a></li>
@@ -48,6 +60,7 @@
 							<li class="logo_container"><a href="http://linkedin.com"><span class="logo_items">Linkeding</span></a></li>
 							<li class="logo_container"><a href="https://www.behance.net"><span class="logo_items">Behance</span></a></li>
 						</ul>
+						<br><br>
 						<a class="contact" href="contact.html"><span>Get In Touch ➔</span></a>
 					</div>
 				</div>
@@ -63,7 +76,7 @@
 			<div class="container contactContainer">
 				<h2 class="titre">Contact Me<br><img src="images/jaune.svg"></h2>
 				<div class="MainContact">
-					<div class="formulaireContact" style="background-color: #F5F6F8;">
+					<div class="formulaireContact formulaireContact-width" style="background-color: #F5F6F8;">
 						<form action="" method="get" class="form-example">
 							<div class="form-example">
 								<label for="name" class="texteFormulaire">Name<br> </label>
@@ -77,18 +90,27 @@
 								<label for="message" class="texteFormulaire">Message<br> </label>
 								<textarea rows="8" name="email" class="caseFormulaire"></textarea>
 							</div>
-							<div class="form-example">
-								<button value="submit" class="jaune bouton">Send</button>
+							<div class="form-example avion">
+								<button value="submit" class="bouton" href="">Send</button>
+								<div style="width:100%;height:0;padding-bottom:36%;position:relative;"><iframe src="https://giphy.com/embed/TKq6iqjObGCKtChhnS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 							</div>
 						</form>
 					</div>
 					<div class="texteContact">
-						<h3>Let's talk how I can help you !<br></h3>
-						<p>If you like my work and want to avail my services then drop me a message using the contact form.</p>
-						<p>Get in touch using my email, skype or my contact number.</p>
-						<p>See you!</p>
-						<p><br>Email: <strong>walter@company.com</strong></p>
-						<p>Skype: <strong>walter@skype.com</strong><br></p>
+						<h3>Let's talk how I can help you !</h3>
+						<br><br>
+						<p class="crash">
+							If you like my work and want to avail my services then drop me a message using the contact form.
+							<br><br>
+							Get in touch using my email, skype or my contact number.
+							<br><br>
+							See you!
+						</p>
+						<br><br>
+						<p>Email: <strong>walter@company.com</strong></p>
+						<br>
+						<p>Skype: <strong>walter@skype.com</strong></p>
+						<br>
 						<p>Phone: <strong>+0718-111-0011</strong></p>
 					</div>
 				</div>
@@ -103,7 +125,7 @@
 			<div class="container footer">
 				<ul class="ul">
 					<li class="nom">Walter Patterson</li>
-					<li style="padding-left:1em">Web Developer & Mobile Application Developer</li>
+					<li class="pro">Web Developer & Mobile Application Developer</li>
 					<li>
 						<ul class="images"> 
 							<li style="margin: 10px"><a href=https://twitter.com/WalterPatterson><img src="images/logo/twitter.png"></a></li>
