@@ -23,25 +23,151 @@ body{
 /* ------------------ navigation for all pages --------------- */
 nav{
     display: flex;
+<<<<<<< HEAD:Template-CV/css/commonFeatures.css
     flex-flow: row;
     
+=======
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    font-family:'Nunito Sans', sans-serif;
+>>>>>>> christopher:css/commonFeatures.css
     padding-bottom: 5%;
+    width: 100%;
 }
+
 .logoNav{
+<<<<<<< HEAD:Template-CV/css/commonFeatures.css
     display: flex;
     justify-content: flex-start;
     
+=======
+    align-self: center;
+    font-family:'Nunito Sans', sans-serif;
+>>>>>>> christopher:css/commonFeatures.css
     flex-basis: 4em;
     flex-grow: 4;
     padding-left: 2%;
+    margin: 0;
+    padding-top: 1%;
+    width: 40%;
 }
+
+.linknav-pos{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.linknav-pos > .crash2 {
+    width: 100%;
+}
+
+.linknav-sub {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.linknav-sub > li{
+    justify-content: space-between;
+}
+
 .linkNav{
-    text-align: center;
+    /* text-align: center; */
+    /* align-self: flex-end; */
     align-self: center;
     text-decoration: none;
-    color: black;
     flex: 1 0 auto;
+    color: rgb(0, 0, 0);
+    transition-property: color;
+    transition-duration: 0s;
 }
+
+.burger {
+    display: none;
+}
+
+@media only screen and (max-width: 560px) {
+
+    .logoNav {
+        width: 70%;
+    }
+
+    .linknav-pos {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        justify-content: center;
+        width: 25%;
+    }
+
+    .burger {
+        display: inline-block;
+        align-self: center;
+        font-size: 40px;
+    }
+
+    .linknav-pos > li {
+        float: left;
+        width: 130px;
+        height: 30px;
+        line-height: 30px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .linknav-sub {
+        flex-flow: column wrap;
+        text-align: center;
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .linknav-sub li {
+        font-size: 10px;
+        padding: 8px 0;
+        border-radius: 10px;
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .linknav-sub > li > a {
+        background-color: rgb(247, 224, 94);
+        box-shadow: 1px 2px 2px rgba(0,0,0,25%);
+        max-width: 180px;
+        max-height: 30px;
+        margin-right: 8%;
+        border-width: 2px 4px;
+        border-radius: 40px;
+    
+        color: black;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .linknav-sub li:last-child {
+        border-bottom: 0;
+    }
+
+    .linknav-sub > li:hover > a {
+        background: rgb(247, 233, 155);
+    }
+    
+    .linknav-pos > li:hover .linknav-sub li {
+    transform: scale(1);
+    }
+
+    .linknav-pos > li:hover .linknav-sub {
+    transform: scale(1);
+    }
+}
+
 /* -------------  End of navigation for all pages ------------- */
 
 
@@ -57,16 +183,29 @@ nav{
     padding: 3%;
 }
 
+<<<<<<< HEAD:Template-CV/css/commonFeatures.css
 /* .header_container > * {
     width: 50%;
 } */
 
 .production {
+=======
+.image_container {
+    width: 50%
+}
+
+.image {
+    width: 90%;
+}
+
+.introduction_container {
+>>>>>>> christopher:css/commonFeatures.css
     display: flex; 
     flex-flow: column wrap;
     justify-content: space-evenly;
     padding-top: 35px;
     padding-bottom: 80px;
+<<<<<<< HEAD:Template-CV/css/commonFeatures.css
     padding-left: 100px;
 }
 
@@ -74,11 +213,17 @@ nav{
     display: flex;
     text-align: left;
 } */
+=======
+    padding-left: 25px;
+    /* width: 50%; */
+}
+>>>>>>> christopher:css/commonFeatures.css
 
 .introduction {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
+    width: 100%;
 }
 
 .introduction > h2 {
@@ -103,6 +248,7 @@ nav{
 .logo_container { 
     display: inline-flex;
     flex-wrap: row wrap;
+    width: 100%;
 }
 
 .logo_li {
@@ -137,6 +283,7 @@ nav{
 }
 .logo_li a[href*="behance.net"]::before { 
     content: '';
+<<<<<<< HEAD:Template-CV/css/commonFeatures.css
     background: url(/Template-CV/images/behance.png) center no-repeat;
     background-size: 15px auto;
     padding-left: 25px; 
@@ -144,6 +291,15 @@ nav{
 
 .logo_li a::after {
     display: inline-flex;
+=======
+    background: url(../images/logo/behance.png) center no-repeat;
+    background-size: contain;
+    padding-left: 25px; 
+}
+
+.logo_container a::after {
+    display: flex;
+>>>>>>> christopher:css/commonFeatures.css
     width: 10px;
 }
 
@@ -151,8 +307,8 @@ nav{
     display: none;
 }
 
-
-/* -------- Bouton Get In Touch ----------- */
+<<<<<<< HEAD:Template-CV/css/commonFeatures.css
+=======
 .contact {
     background-color: rgb(247, 224, 94);
     box-shadow: 1px 2px 2px rgba(0,0,0,25%);
@@ -167,20 +323,267 @@ nav{
     justify-content: center;
     text-decoration: none;
     font-weight: bold;
+    width: 100%;
 }
 
 .contact span {
     font-size: 14px;
     align-self: center;
 }
+>>>>>>> christopher:css/commonFeatures.css
+
+.hello {
+    display: inline-block;
+    flex-wrap: row wrap;
+}
+
+.hello > h2 {
+    width: 100%;
+}
+
+.image_content {
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+    .image_container {
+        width: 70%;
+        margin-right: 20%;
+        margin-top: 3%;
+    }
+
+    .introduction_container {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 15%;
+        padding-left: 3% ;
+        padding-right: 3%;
+        align-items: center;
+    }
+
+    .introduction > p, h2, h3 {
+        text-align: center;
+    }
+
+    .hello > h2 {
+        font-size: 21.5px;
+    }
+
+    .introduction > h3 {
+        font-size: 17px;
+    }
+
+    .image_content {
+        text-align: right;
+    }
+
+    .underligning {
+        margin-right: 10%;
+    }
+
+    .introduction_container > .logo_docker {
+        justify-content: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 560px) {
+    .image_container {
+        width: 70%;
+        margin-right: 20%;
+        margin-top: 3%;
+    }
+
+    .introduction_container {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 15%;
+        padding-left: 3% ;
+        padding-right: 3%;
+        align-items: center;
+    }
+
+    .introduction > p, h2, h3 {
+        text-align: center;
+    }
+
+    .introduction > p {
+        font-size: 19px;
+    }
+
+    .hello > h2 {
+        font-size: 30px;
+    }
+
+    .introduction > h3 {
+        font-size: 20px;
+    }
+
+    .image_content {
+        text-align: right;
+    }
+
+    .underligning {
+        margin-right: 6%;
+    }
+
+    .introduction_container > .logo_docker {
+        justify-content: center;
+    }
+
+
+
+    .contact {
+        max-width: 190px;
+        max-height: 40px;
+        padding: 6.5%;
+        text-align: center;
+    }
+
+    .contact span {
+        font-size: 16px;
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width: 561px) and (max-width: 900px) {
+    
+    .header_container > .image_container {
+        margin-top: 8%;
+        text-align: center;
+    }
+    
+    .image_container {
+        width: 80%;
+    }
+
+    .introduction_container {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 15%;
+        padding-left: 3% ;
+        padding-right: 3%;
+        align-items: center;
+    }
+
+    .introduction > p, h2, h3 {
+        text-align: center;
+    }
+
+    .introduction > p {
+        font-size: 20px;
+    }
+
+    .hello > h2 {
+        font-size: 36px;
+    }
+
+    .introduction > h3 {
+        font-size: 23px;
+    }
+
+    .image_content {
+        text-align: right;
+    }
+
+    .underligning {
+        margin-right: 6%;
+    }
+
+    .introduction_container > .logo_docker {
+        justify-content: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+/* @media (max-width: 320px) {
+    .header_container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 320px;
+        width: 100%;
+        padding: 5%;
+    }
+
+    .image_container{
+        min-width: 300px;
+        max-width: 320px;
+    }
+    .introduction_container{
+        min-width: 300px;
+        max-width: 320px;
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        min-width: 300px;
+        max-width: 320px;
+    }
+    .introduction {
+        width: 100%;
+        font-size: 80%;
+    }
+    .introduction >h2{
+        font-size: 20%;
+    }
+    
+
+} */
+/* @media screen and (min-width: 321px) {
+    .underligning {
+        align-self: flex-end;
+    }
+    .introduction {
+        max-width: 100%;
+
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .image_container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .image_container {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .image_container {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .image_container {
+        width: 50%;
+    }
+} */
+
+/* -------- Bouton Get In Touch ----------- */
+
 
 /* ------------------ end of The header ------------- */
 
 
 /* ------------------- footer -----------------------*/
 
+<<<<<<< HEAD:Template-CV/css/commonFeatures.css
 
 #footer{
+=======
+.footer{
+>>>>>>> christopher:css/commonFeatures.css
     font-family: 'Bebas Neue', cursive;
     font-family: 'Nunito Sans', sans-serif;
     display:flex;
@@ -229,6 +632,34 @@ strong{
 #ul>li{
     text-align:center;
 }
+
+/* @media only screen and (max-width: 400px) {
+    .nom {
+        
+    }
+
+    .pro {
+
+    }
+
+    .detail {
+
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    .nom {
+        a;
+    }
+
+    .pro {
+
+    }
+
+    .detail {
+        
+    }
+} */
 
 
 /* --------------- end of the footer -----------*/
