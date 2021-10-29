@@ -108,7 +108,6 @@ table{
 /* Premier bloc du main */
 
 @media screen and (max-width:320px) {
-    
     *{
         max-width: 320px;
         margin: auto;
