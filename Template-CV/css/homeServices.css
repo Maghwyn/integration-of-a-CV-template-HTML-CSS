@@ -1,19 +1,16 @@
-/* Premier bloc du main */
 .mainContainer{
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: center;
     box-sizing: border-box;
-   
-    flex-basis: auto;
+    width: 100%;
+    height: 100%;
     gap: 10%;
 }
 .divContainer{
     display: flex;
     flex-direction:column ;
-    flex-basis: auto;
-    flex-grow: 0;
-    order:-2;
+    width: 45%;
 
     gap: 15px;
     padding:3%;
@@ -25,7 +22,7 @@
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
-    order:-2;
+    order:0;
     margin: 0%;
     
     
@@ -41,17 +38,27 @@
     color: gray;
 }
 
+<<<<<<< HEAD:Template-CV/css/homeServices.css
 
 
 
 .profilePicture{
     order: -1;
+=======
+.cliento{
+    order:0 ;
+>>>>>>> christopher:css/homeServices.css
     padding:3%;
-    
-
+    width: 45%;
 }
+<<<<<<< HEAD:Template-CV/css/homeServices.css
 .profilePicture img{
+=======
+
+.cliento img{
+>>>>>>> christopher:css/homeServices.css
     border-radius: 5%;
+    width: 90%;
 }
 /* fin du premier bloc du main */
 
@@ -61,6 +68,7 @@
     display:flex;
     flex-flow: column;
     align-items: center;
+    width: 100%;
     
 }
 .secondTitleDiv{
@@ -83,11 +91,80 @@
     justify-content: space-around;
     flex-flow: row;
     padding-bottom: 10%;
-    
-    
-
+    width: 100%;
 }
+.divLogo div img{
+    display: flex;
+    width:100% ;
+    max-height:50% ;
+}
+<<<<<<< HEAD:Template-CV/css/homeServices.css
 .logoHome div span{
+=======
+.divLogo div p{
+>>>>>>> christopher:css/homeServices.css
     display: flex;
     justify-content: center;
+    margin: 5px;
+}
+.containerLogos{
+    width: 100%;
+}
+
+/* Premier bloc du main */
+
+@media screen and (max-width:320px) {
+    *{
+        max-width: 320px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .cliento{
+        order:0 ;    
+    }
+
+    .cliento img{
+        max-width: 310px;
+        min-width: 310px;
+        width: 100%;
+    }
+    .divContainer{
+        max-width: 310px;
+        min-width: 310px;
+        width: 100%;
+    }
+    .mainContainer{
+        width: 100%;
+        height: 50%;
+    }
+    /* .secondDivContainer{
+        width: 50%;
+    } */
+    .divLogo div img{
+        width: 50%;
+        max-height: 50%;
+        max-width: 50%;
+        
+    }
+    .containerLogos{
+        width: 50%;
+    }
+    .containerLogos div img {
+        width: 30%;
+    }
+    .containerLogos div {
+        font-size: 50%;  
+        align-self: center; 
+    }
+    /* .containerLogos div p{
+        align-self: center;
+    } */
+    .divLogo div p{
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+
+
+    }    
 }
