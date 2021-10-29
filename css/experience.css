@@ -19,6 +19,11 @@
     width: 100%;
 }
 
+.underligning {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
 .experience_cv {
     display: flex;
     flex-flow: row wrap;
@@ -35,6 +40,12 @@
     border: 3px solid rgb(245,246,248);
     width: 48%;
     margin-top: 30px;
+}
+
+.shadow:hover {
+    transition : all 0.3s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 7px rgba(0,0,0,25%);
 }
 
 .exp_title {
@@ -88,6 +99,7 @@
 }
 
 @media only screen and (max-width: 400px) {
+    
     .experience_container {
         width: 100%;
         margin-top: 25px;

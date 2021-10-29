@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -74,8 +75,6 @@
 }
 
 .linkNav{
-    /* text-align: center; */
-    /* align-self: flex-end; */
     align-self: center;
     text-decoration: none;
     flex: 1 0 auto;
@@ -155,15 +154,15 @@
     }
 
     .linknav-sub > li:hover > a {
-        background: rgb(247, 233, 155);
+        background: #ffed84;
     }
     
     .linknav-pos > li:hover .linknav-sub li {
-    transform: scale(1);
+        transform: scale(1);
     }
 
     .linknav-pos > li:hover .linknav-sub {
-    transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -195,7 +194,6 @@
     padding-top: 35px;
     padding-bottom: 80px;
     padding-left: 25px;
-    /* width: 50%; */
 }
 
 .introduction {
@@ -211,7 +209,7 @@
     margin-bottom: -5px;
 }
 
-.underligning {
+.image_content > .underligning {
     align-self: flex-end;
     margin-bottom: 20px;
 }
@@ -233,43 +231,23 @@
 .logo_container {
     align-self: flex-start;
     list-style: none; 
-    margin-right: 10px;
+    margin-right: 5%;
 }
 
-.logo_container a[href*="twitter.com"]::before {
-    content: '';
-    background: url(../images/logo/twitter.png) center no-repeat;
-    background-size: 15px auto;
-    padding-left: 25px;
-}
-.logo_container a[href*="facebook.com"]::before { 
-    content: '';
-    background: url(../images/logo/facebook.png) center no-repeat;
-    background-size: 15px auto;
-    padding-left: 25px;
-}
-.logo_container a[href*="instagram.com"]::before { 
-    content: '';
-    background: url(../images/logo/instagram.png) center no-repeat;
-    background-size: 15px auto;
-    padding-left: 25px;
-}
-.logo_container a[href*="linkedin.com"]::before { 
-    content: '';
-    background: url(../images/logo/linkedin-logo.png) center no-repeat;
-    background-size: 15px auto;
-    padding-left: 25px;
-}
-.logo_container a[href*="behance.net"]::before { 
-    content: '';
-    background: url(../images/logo/behance.png) center no-repeat;
-    background-size: contain;
-    padding-left: 25px; 
+.logo_container > a {
+    width: 100%;
 }
 
-.logo_container a::after {
-    display: flex;
-    width: 10px;
+.logo_container > a > img {
+    width: 90%;
+}
+
+.zoom {
+    transition : all 0.2s ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
 }
 
 .logo_items {
@@ -298,6 +276,10 @@
     align-self: center;
 }
 
+.contact:hover {
+    background : #ffed84;
+}
+
 .hello {
     display: inline-block;
     flex-wrap: row wrap;
@@ -314,9 +296,7 @@
 
 @media only screen and (max-width: 400px) {
     .image_container {
-        width: 70%;
-        margin-right: 20%;
-        margin-top: 3%;
+        width: 90%;
     }
 
     .introduction_container {
@@ -344,8 +324,8 @@
         text-align: right;
     }
 
-    .underligning {
-        margin-right: 10%;
+    .image_content > .underligning {
+        margin-right: 8%;
     }
 
     .introduction_container > .logo_docker {
@@ -355,13 +335,20 @@
     .contact {
         text-align: center;
     }
+
+    .logo_container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .logo_container > a > img {
+        width: 75%;
+    }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 560px) {
+@media only screen and (min-width: 401px) and (max-width: 560px) {
     .image_container {
-        width: 70%;
-        margin-right: 20%;
-        margin-top: 3%;
+        width: 90%;
     }
 
     .introduction_container {
@@ -393,7 +380,7 @@
         text-align: right;
     }
 
-    .underligning {
+    .image_content > .underligning {
         margin-right: 6%;
     }
 
@@ -401,7 +388,9 @@
         justify-content: center;
     }
 
-
+    .logo_container > a > img {
+        width: 95%;
+    }
 
     .contact {
         max-width: 190px;
@@ -456,7 +445,7 @@
         text-align: right;
     }
 
-    .underligning {
+    .image_content > .underligning {
         margin-right: 6%;
     }
 
@@ -468,73 +457,6 @@
         text-align: center;
     }
 }
-
-/* @media (max-width: 320px) {
-    .header_container{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 320px;
-        width: 100%;
-        padding: 5%;
-    }
-
-    .image_container{
-        min-width: 300px;
-        max-width: 320px;
-    }
-    .introduction_container{
-        min-width: 300px;
-        max-width: 320px;
-        width: 100%;
-    }
-    .image{
-        width: 100%;
-        min-width: 300px;
-        max-width: 320px;
-    }
-    .introduction {
-        width: 100%;
-        font-size: 80%;
-    }
-    .introduction >h2{
-        font-size: 20%;
-    }
-    
-
-} */
-/* @media screen and (min-width: 321px) {
-    .underligning {
-        align-self: flex-end;
-    }
-    .introduction {
-        max-width: 100%;
-
-    }
-}
-
-@media only screen and (min-width: 400px) {
-    .image_container {
-        width: 80%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .image_container {
-        width: 40%;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .image_container {
-        width: 40%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .image_container {
-        width: 50%;
-    }
-} */
 
 /* -------- Bouton Get In Touch ----------- */
 
@@ -593,34 +515,5 @@ strong{
 .ul>li{
     text-align:center;
 }
-
-/* @media only screen and (max-width: 400px) {
-    .nom {
-        
-    }
-
-    .pro {
-
-    }
-
-    .detail {
-
-    }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 768px) {
-    .nom {
-        a;
-    }
-
-    .pro {
-
-    }
-
-    .detail {
-        
-    }
-} */
-
 
 /* --------------- end of the footer -----------*/
