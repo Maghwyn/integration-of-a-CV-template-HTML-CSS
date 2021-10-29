@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/commonFeatures.css">
 		<link rel="stylesheet" href="css/homeServices.css">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 
 	<body>
@@ -17,11 +18,18 @@
 
 		<nav id="nav" class="navigation gris">
 			<div class="container nav"> 
-					<h1 class="logoNav">Super Folio</h1>
-					<a class="linkNav" href="homeServices.html">Services</a>
-					<a class="linkNav" href="experiences.html">Expérience</a>
-					<a class="linkNav" href="testimonials.html">Testimonials</a>
-					<a class="linkNav" href="contact.html">Contact</a>
+				<h1 class="logoNav">Super Folio</h1>
+                <ul class="linknav-pos"> 
+					<li class="crash2"> 
+						<label class="burger">☰</label>  
+						<ul class ="linknav-sub">
+							<li><a class="linkNav" href="homeServices.html">Services</a></li>
+							<li><a class="linkNav" href="experiences.html">Experience</a></li>
+							<li><a class="linkNav" href="testimonials.html">Testimonials</a></li>
+							<li><a class="linkNav" href="contact.html">Contact</a></li>
+						</ul>
+					</li>
+				<ul>
 			</div>
 		</nav>
 
@@ -35,21 +43,25 @@
 					<div class="image_container">
 						<img class="image" src="images/hello3.svg">
 					</div>
-					<div class="introduction_container">
-						<div class="introduction"> HELLO !
-							<div class="alignHeaderTitle">
-								<h2><strong>I'm Walter Petterson</strong></h2>
-								<img class="underligning" src="images/jaune.svg">
+					<div class="introduction_container" data-aos="zoom-in">
+						<div class="introduction"> 
+							<p>HELLO !</p>
+							<br>
+							<div class="hello">
+								<h2><strong>I'm Walter Patterson</strong></h2>
+								<div class="image_content"><img class="underligning" src="images/jaune.svg"></div>
 							</div>
 							<h3>Web Developer & Mobile Application Developer</h3>
+							<br><br>
 						</div>
 						<ul class="logo_docker">
-							<li class="logo_container"><a href="http://twitter.com"><span class="logo_items">Twitter</span></a></li>
-							<li class="logo_container"><a href="http://facebook.com"><span class="logo_items">Facebook</span></a></li>
-							<li class="logo_container"><a href="http://instagram.com"><span class="logo_items">Instagram</span></a></li>
-							<li class="logo_container"><a href="http://linkedin.com"><span class="logo_items">Linkeding</span></a></li>
-							<li class="logo_container"><a href="https://www.behance.net"><span class="logo_items">Behance</span></a></li>
+							<li class="logo_container"><a href="https://twitter.com/WalterPatterson"><img class="zoom" src="images/logo/twitter.png"><span class="logo_items">Twitter</span></a></li>
+							<li class="logo_container"><a href="https://www.facebook.com/walter.patterson"><img class="zoom" src="images/logo/facebook.png"><span class="logo_items">Facebook</span></a></li>
+							<li class="logo_container"><a href="https://www.instagram.com/walter.patterson"><img class="zoom" src="images/logo/instagram.png"><span class="logo_items">Instagram</span></a></li>
+							<li class="logo_container"><a href="https://www.linkedin.com/in/walter-patterson-29018ab9"><img class="zoom" src="images/logo/linkedin-logo.png"><span class="logo_items">Linkeding</span></a></li>
+							<li class="logo_container"><a href="https://www.behance.net/wt_patters4079"><img class="zoom" src="images/logo/behance.png"><span class="logo_items">Behance</span></a></li>
 						</ul>
+						<br><br>
 						<a class="contact" href="contact.html"><span>Get In Touch ➔</span></a>
 					</div>
 				</div>
@@ -62,7 +74,7 @@
 		<!-- MAIN SECTION -->
 
 		<main id="" class="main">
-			<container class="container mainContainer">
+			<container class="container mainContainer" data-aos="zoom-in">
 				<div class="divContainer">
 					<h2>Hello! I'm Walter Patterson.</h2>
 					<p>I am passionate aboute UI/UX design and Web Design. I am a skilled front-end developper and master of graphic desig tool such as Photoshop and Sketch. I am a quick learner and a team worker that gets the job done. I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time schemas.</p>			
@@ -96,10 +108,10 @@
 					</table>
 				</div>	
 				<div class="cliento">
-					<img src="images/client1.jpeg" alt="cliquos">
+					<img src="images/walter.jpeg" alt="cliquos">
 				</div>
 			</container>
-			<section class="secondMainContainer">
+			<section class="secondMainContainer" data-aos="zoom-in">
 				<div class="secondDivContainer">
 					<h2 class="secondTitleDiv">My Services</h2>
 					<div class="underligned">
@@ -128,6 +140,13 @@
 					</div>
 				</div>
 			</section>
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+				<script>
+					AOS.init({
+					 duration: 2000,
+					 once: true,
+					});
+				</script>
 		</main>
 	
 		<!-- /MAIN SECTION -->
@@ -138,14 +157,15 @@
 			<div class="container footer">
 				<ul class="ul">
 					<li class="nom">Walter Patterson</li>
-					<li style="padding-left:1em">Web Developer & Mobile Application Developer</li>
+					<li class="pro">Web Developer & Mobile Application Developer</li>
+					<br>
 					<li>
 						<ul class="images"> 
-							<li style="margin: 10px"><a href=https://twitter.com/WalterPatterson><img src="images/logo/twitter.png"></a></li>
-							<li style="margin: 10px"><a href=https://www.facebook.com/walter.patterson><img src="images/logo/facebook.png"></a></li>
-							<li style="margin: 10px"><a href=https://www.instagram.com/walter.patterson><img src="images/logo/instagram.png"></a></li>
-							<li style="margin: 10px"><a href=https://www.linkedin.com/in/walter-patterson-29018ab9><img src="images/logo/linkedin-logo.png"></a></li>
-							<li style="margin: 10px"><a href=https://www.behance.net/wt_patters4079><img src="images/logo/behance.png"></a></li>       
+							<li style="margin: 10px"><a href=https://twitter.com/WalterPatterson><img class="zoom" src="images/logo/twitter.png"></a></li>
+							<li style="margin: 10px"><a href=https://www.facebook.com/walter.patterson><img class="zoom" src="images/logo/facebook.png"></a></li>
+							<li style="margin: 10px"><a href=https://www.instagram.com/walter.patterson><img class="zoom" src="images/logo/instagram.png"></a></li>
+							<li style="margin: 10px"><a href=https://www.linkedin.com/in/walter-patterson-29018ab9><img class="zoom" src="images/logo/linkedin-logo.png"></a></li>
+							<li style="margin: 10px"><a href=https://www.behance.net/wt_patters4079><img class="zoom" src="images/logo/behance.png"></a></li>       
 						</ul>
 					</li>
 					<li class="detail">©️ Super Folio. All rights reserved.</li>

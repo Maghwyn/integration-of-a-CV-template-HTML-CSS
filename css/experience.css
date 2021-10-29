@@ -6,17 +6,22 @@
 .experience_main_title {
     display: flex;
     flex-flow: column wrap;
-    width: 100%;
     text-align:center;
+    width: 100%;
 }
 
 .exp_h2 {
-    width: 100%;
     font-size: 22.5px;
+    width: 100%;
 }
 
 .exp_img_yellow {
     width: 100%;
+}
+
+.underligning {
+    align-self: center;
+    margin-bottom: 20px;
 }
 
 .experience_cv {
@@ -35,6 +40,12 @@
     border: 3px solid rgb(245,246,248);
     width: 48%;
     margin-top: 30px;
+}
+
+.shadow:hover {
+    transition : all 0.3s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 7px rgba(0,0,0,25%);
 }
 
 .exp_title {
@@ -87,8 +98,95 @@
     padding: 3.5% 6% 7%;
 }
 
-/* @media only screen and (min-width: 400px) {
+@media only screen and (max-width: 400px) {
+    
     .experience_container {
         width: 100%;
+        margin-top: 25px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 20px;
     }
-} */
+
+    .exp_h3 {
+        padding: 1% 0 2% 6%;
+        width: 76%;
+    }
+
+    .exp_h3 > h3 {
+        width: 100%;
+        justify-content: space-evenly;
+        font-size: 18px;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .exp_h3 > span {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .icon {
+        width: 80%;
+    }
+
+    .exp_paragraph {
+        font-size: 15px;
+        padding: 3.5% 6% 7%;
+    }
+
+    .underligning {
+        width: 32%;
+    }
+
+    .exp_h2 > h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    .experience_container {
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 20px;
+    }
+
+    .exp_h3 {
+        padding: 1% 0 2% 6%;
+        width: 76%;
+    }
+
+    .exp_h3 > h3 {
+        width: 100%;
+        justify-content: space-evenly;
+        font-size: 24px;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .exp_h3 > span {
+        width: 100%;
+        font-size: 19px;
+    }
+
+    .icon {
+        width: 80%;
+    }
+
+    .exp_paragraph {
+        font-size: 20px;
+        padding: 3.5% 6% 7%;
+    }
+
+    .underligning {
+        width: 32%;
+    }
+
+    .exp_h2 > h2 {
+        font-size: 39px;
+        width: 100%;
+    }
+}

@@ -7,6 +7,7 @@
     display: flex;
     flex-flow: column wrap;
     text-align:center;
+    width: 100%;
 }
 
 .client_h2 {
@@ -26,25 +27,21 @@
 }
 
 .client_container {
-    /* margin-left: auto;
-    margin-right: auto; */
     display: flex;
     flex-flow: row wrap;
     border-radius: 10px;
     width: 45%;
     margin-bottom: 30px;
     margin-left: 20px;
-    /* background-color: aquamarine; */
 }
 
 .client_this {
     text-align: right;
     width: 10%;
-    /* background-color: cornflowerblue; */
 }
 
 .client_this > p {
-    font-size: 140px;
+    font-size: 15vw;
 }
 
 .client_bundle {
@@ -56,26 +53,20 @@
 .client_title {
     display: inline-flex;
     width: 100%;
-    /* max-height: 70px; */
-    /* background-color: bisque; */
 }
 
 .client_title > .client_this {
-    /* text-align:center; */
     display: inline-flex;
     text-align: right;
-    /* background-color: blue; */
 }
 
 .client_title > .client_para {
     align-self: flex-end;
-    /* background-color: violet; */
     text-align: start;
 }
 
 .client_para {
-    /* align-self: center; */
-    font-size: 19px; /*18*/
+    font-size: 19px; 
     width: 100%;
     margin : 12% 0 5% 2%;
 }
@@ -84,10 +75,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
-    /* align-content :flex-end; */
-    /* flex-flow: row wrap; */
     width: 100%;
-    /* background-color: green; */
 }
 
 .client_test {
@@ -96,7 +84,6 @@
     justify-content: stretch;
     width: 68%;
     margin : 0 4% 0 0;
-    /* height: 100%; */
 }
 
 .client_test > span {
@@ -108,8 +95,6 @@
     text-align: center;
     width: 28%;
     margin : 0 0 0 0;
-    /* height: 100%; */
-    /* background-color: blueviolet; */
 }
 
 .client_icon > .icon {
@@ -117,27 +102,108 @@
     border-radius: 20px;
 }
 
-/*
-.exp_h3 > span {
-    width: 100%;
-    font-weight: normal;
-    color: rgb(152, 154, 158);
+@media only screen and (max-width: 400px) {
+    .underligning {
+        width: 34%;
+    }
+
+    .client_h2 > h2 {
+        font-size: 27px;
+        width: 100%;
+    }
+
+    .client_container {
+        width: 100%;
+        padding-right: 6.1%;
+    }
+
+    .client_this {
+        text-align: left;
+    }
+
+    .client_this > p {
+        font-size: 27vw;
+    }
+
+    .client_para {
+        font-size: 16px; 
+        width: 100%;
+        margin : 9.5% 0 5% 6%;
+    }
+
+    .client_test {
+        align-self: flex-end;
+        text-align: right;
+        width: 62%;
+        margin : 0 8% 0 0;
+    }
+
+    .client_test > span {
+        font-size: 13px;
+    }
+
+    .client_test > h3 {
+        font-size: 17px;
+    }
+    
+    .client_icon > .icon {
+        width: 100%;
+        border-radius: 14px;
+    }
 }
 
-.exp_h3 > h3 {
-    justify-content: space-evenly;
-    /* font-size: 23px; */
-/* } */
-/* 
-.exp_icon {
-    width: 20%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    .underligning {
+        width: 34%;
+    }
+
+    .client_h2 > h2 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .client_container {
+        width: 100%;
+        padding-right: 6.1%;
+    }
+
+    .client_this {
+        text-align: left;
+    }
+
+    .client_this > p {
+        font-size: 28vw;
+    }
+
+    .client_para {
+        font-size: 20px; 
+        width: 100%;
+        margin : 9% 0 5% 5%;
+    }
+
+    .client_test {
+        align-self: flex-end;
+        text-align: right;
+        width: 62%;
+        margin : 0 7% 0 0;
+    }
+
+    .client_test > span {
+        font-size: 15px;
+    }
+
+    .client_test > h3 {
+        font-size: 22px;
+    }
+    
+    .client_icon > .icon {
+        width: 100%;
+        border-radius: 15px;
+    }
 }
 
-
-.exp_paragraph {
-    font-size: 19px;
-    padding: 3.5% 6% 7%;
+@media only screen and (min-width: 1200px) {
+    .client_this > p {
+        font-size: 140px;
+    }
 }
-  */

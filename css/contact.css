@@ -16,13 +16,24 @@
     width: 100%;
     padding: 30px;
     padding-bottom: 0px;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px -5px rgba(0,0,0,0.20);
 }
 
 .texteContact{
     max-width: 400px;
     width: 100%;
-    padding: 10px;
+    padding-top: 4%;
+    padding-left: 3%;
+    position: relative;
+    z-index: 1;
+}
 
+.texteContact {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .texteFormulaire{
@@ -47,6 +58,10 @@
     text-align: center;
 }
 
+.titre > img {
+    margin-bottom: 5%;
+}
+
 .gris{
     background-color: #F5F6F8;
 }
@@ -68,11 +83,33 @@
     margin: 10px 10px;
     border-radius: 20px;
     border-color:rgb(168, 168, 168);
+    background-color: #F7e05e;
+    transition-property: background-color;
+    transition-duration: 0s;
 }
 
-.texteContact > *{
-    margin: 30px;
+.bouton:hover {
+    background-color: #ffed84;
 }
-/* h3{
-    margin: 30px;
-} */
+
+.avion{
+    display: flex;
+    align-items: flex-start;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .formulaireContact-width{
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .texteContact {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .crash {
+        align-self: center;
+    }
+}
