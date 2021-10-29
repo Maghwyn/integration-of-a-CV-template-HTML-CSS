@@ -1,5 +1,6 @@
 .mainContainer{
     display: flex;
+    justify-content: space-around;
     flex-flow: row wrap;
     align-items: center;
     box-sizing: border-box;
@@ -10,8 +11,8 @@
 .divContainer{
     display: flex;
     flex-direction:column ;
-    width: 45%;
-
+    max-width: 42%;
+    min-width: 42%;
     gap: 15px;
     padding:3%;
     
@@ -19,6 +20,7 @@
 
 .mainContainer h2{
     display: flex;
+    
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
@@ -39,14 +41,20 @@ table{
 }
 
 .cliento{
+    display: flex;
+    justify-content: space-around;
     order:0 ;
     padding:3%;
-    width: 45%;
+    /* max-width: 49%; */
+    min-width: 48%;
+    /* margin: 3px; */
 }
 
 .cliento img{
     border-radius: 5%;
-    width: 90%;
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%
 }
 /* fin du premier bloc du main */
 
@@ -103,15 +111,22 @@ table{
         margin: auto;
         padding: auto;
     }
+    table{
+        margin: 0%;
+    }
 
     .cliento{
-        order:0 ;    
+       
+        order:0 ;  
+        min-width: 45%;  
     }
 
     .cliento img{
-        max-width: 310px;
-        min-width: 310px;
-        width: 100%;
+
+       
+        min-width: 100%;
+        margin: 0px;
+       
     }
     .divContainer{
         max-width: 310px;
@@ -151,4 +166,11 @@ table{
 
 
     }    
+}
+@media screen and (min-width:320px) and (max-width:768px){
+    .divContainer{
+        max-width: 100%;
+    }
+
+
 }
